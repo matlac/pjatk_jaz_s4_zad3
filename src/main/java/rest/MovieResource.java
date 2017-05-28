@@ -115,7 +115,7 @@ public class MovieResource {
 
         int i = 0;
         for(Comment el : result.getComments()){
-            if(el.getId() == id) {
+            if(el.getId() == comment_id) {
                 result.getComments().remove(i);
                 return Response.ok().build();
             }
